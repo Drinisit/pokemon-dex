@@ -1,4 +1,5 @@
 import Logo from './assets/pokemondex.webp';
+import Bulbasaur from './assets/bulbasaur.avif'
 
 const taglineDescriptions = [`Gotta Catch 'Em All!`, 'The adventure begins!', 'The ultimate Pokémon experience.','Become a Pokémon Master!'];
 
@@ -18,10 +19,31 @@ function Header() {
   );
 }
 
+function PokeCard(props){
+  return (
+    <li>
+      <img src={props.image} alt={props.description} />
+      <h3>{props.name}</h3>
+      <p>{props.description}</p>
+    </li>
+  )
+}
+
 function App() {
   return (
     <>
       <Header />
+      <section>
+        <br />
+        <h2>Pokedex</h2>
+        <ul>
+          <PokeCard
+            name="Bulbasaur"
+            description="Bulbasaur is a Grass/Poison type Pokémon introduced in Generation 1"
+            image ={Bulbasaur}
+          />
+        </ul>
+      </section>
     </>
   );
 }
