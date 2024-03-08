@@ -7,3 +7,28 @@
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+li{
+  text-decoration: none;
+  list-style:none;
+}
+
+.cards{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pokecard{
+  margin: 10px;
+  padding: 10px;
+}
+
