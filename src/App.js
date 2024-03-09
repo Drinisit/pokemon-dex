@@ -2,6 +2,9 @@ import Logo from './assets/pokemondex.webp';
 import Bulbasaur from './assets/bulbasaur.avif';
 import Charmander from './assets/charmander.avif';
 import Squirtle from './assets/squirtle.avif';
+
+import Header from './components/Header'
+
 import './index.css'
 
 const taglineDescriptions = [`Gotta Catch 'Em All!`, 'The adventure begins!', 'The ultimate Pokémon experience.','Become a Pokémon Master!'];
@@ -11,16 +14,6 @@ function genRandomInt(max) {
 }
 
 
-function Header() {
-  const description = taglineDescriptions[genRandomInt(3)];
-  return (
-    <header>
-      <img src={Logo} alt="" />
-      <h1>POKEMON</h1>
-      <p>{description}</p>
-    </header>
-  );
-}
 
 function PokeCard(props){
   return (
