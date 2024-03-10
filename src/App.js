@@ -1,17 +1,8 @@
-import Logo from './assets/pokemondex.webp';
-import Bulbasaur from './assets/bulbasaur.avif';
-import Charmander from './assets/charmander.avif';
-import Squirtle from './assets/squirtle.avif';
+import { POKEMON_LIST } from './data';
 
 import Header from './components/Header'
 
 import './index.css'
-
-const taglineDescriptions = [`Gotta Catch 'Em All!`, 'The adventure begins!', 'The ultimate Pokémon experience.','Become a Pokémon Master!'];
-
-function genRandomInt(max) {
-  return Math.floor(Math.random() * (max + 1));
-}
 
 
 
@@ -34,20 +25,15 @@ function App() {
         <h2>Pokedex</h2>
         <ul>
           <PokeCard
-            name="Bulbasaur"
-            description="Bulbasaur is a Grass/Poison type Pokémon introduced in Generation 1"
-            image ={Bulbasaur}
+            name={POKEMON_LIST[0].name}
+            description={POKEMON_LIST[0].description}
+            image ={POKEMON_LIST[0].image}
           />
-          <PokeCard
-            name="Charmander"
-            description="Charmander is a Fire type Pokémon introduced in Generation 1."
-            image ={Charmander}
-          />
-          <PokeCard
-            name="Squartle"
-            description="Squirtle is a Water type Pokémon introduced in Generation 1."
-            image ={Squirtle}
-          />
+
+          <PokeCard {...POKEMON_LIST[1]} />
+          <PokeCard {...POKEMON_LIST[2]} />
+          <PokeCard {...POKEMON_LIST[3]} />
+          
         </ul>
       </section>
     </>
