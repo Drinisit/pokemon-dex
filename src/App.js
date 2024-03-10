@@ -6,12 +6,12 @@ import './index.css'
 
 
 
-function PokeCard(props){
+function PokeCard({image, name, description}){
   return (
     <li>
-      <img src={props.image} alt={props.description} />
-      <h3>{props.name}</h3>
-      <p>{props.description}</p>
+      <img src={image} alt={description} />
+      <h3>{name}</h3>
+      <p>{description}</p>
     </li>
   )
 }
