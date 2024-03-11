@@ -8,23 +8,30 @@ body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-li{
-  text-decoration: none;
-  list-style:none;
-}
 
-.cards{
+main{
   width: 90%;
+  max-width: 50rem;
   margin: auto;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
 }
 
-ul{
+.cards ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  flex-direction: row;
+  gap: 2;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cards li{
+  width: 10rem;
+  text-align: center;
+}
+
+.cards li img{
+  width: 7rem;
 }
 
 

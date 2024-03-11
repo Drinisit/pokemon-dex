@@ -12,6 +12,9 @@ function App() {
   return (
     <>
       <Header />
+      <main>
+
+     
       <section className='cards'>
         <br />
         <h2>Pokedex</h2>
@@ -28,6 +31,7 @@ function App() {
           
         </ul>
       </section>
+      </main>
     </>
   );
 }
