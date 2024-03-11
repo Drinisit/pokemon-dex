@@ -1,4 +1,5 @@
 import { POKEMON_LIST } from './data';
+import PokeCard from './components/PokeCard'
 
 import Header from './components/Header'
 
@@ -6,15 +7,6 @@ import './index.css'
 
 
 
-function PokeCard({image, name, description}){
-  return (
-    <li>
-      <img src={image} alt={description} />
-      <h3>{name}</h3>
-      <p>{description}</p>
-    </li>
-  )
-}
 
 function App() {
   return (
