@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/pokemon-dex/static/css/main.e66888f7.css",
-    "main.js": "/pokemon-dex/static/js/main.8566bd1c.js",
+    "main.css": "/pokemon-dex/static/css/main.c3f0c0e0.css",
+    "main.js": "/pokemon-dex/static/js/main.47b5c72f.js",
     "static/media/bulbasaur.avif": "/pokemon-dex/static/media/bulbasaur.f8f7fe7efc7019a574e2.avif",
     "static/media/charmander.avif": "/pokemon-dex/static/media/charmander.3b4ad5dfbe538f6805d5.avif",
     "static/media/squirtle.avif": "/pokemon-dex/static/media/squirtle.5c9c4e88eac78423de67.avif",
     "static/media/pikachu.avif": "/pokemon-dex/static/media/pikachu.a126e09ad95cc2f65692.avif",
     "index.html": "/pokemon-dex/index.html",
     "static/media/pokemondex.webp": "/pokemon-dex/static/media/pokemondex.f755a6d81f5bce758b98.webp",
-    "main.e66888f7.css.map": "/pokemon-dex/static/css/main.e66888f7.css.map",
-    "main.8566bd1c.js.map": "/pokemon-dex/static/js/main.8566bd1c.js.map"
+    "main.c3f0c0e0.css.map": "/pokemon-dex/static/css/main.c3f0c0e0.css.map",
+    "main.47b5c72f.js.map": "/pokemon-dex/static/js/main.47b5c72f.js.map"
   },
   "entrypoints": [
-    "static/css/main.e66888f7.css",
-    "static/js/main.8566bd1c.js"
+    "static/css/main.c3f0c0e0.css",
+    "static/js/main.47b5c72f.js"
   ]
 }
