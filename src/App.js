@@ -8,7 +8,7 @@ import TabButton from "./components/TabButton";
 import "./index.css";
 
 function App() {
-  const [selectedPokemon ,setSelectedPokemon] = useState('articuno'); 
+  const [selectedPokemon ,setSelectedPokemon] = useState(); 
 
   function handleClick(selectedButton) {
     setSelectedPokemon(selectedButton);
@@ -37,15 +37,25 @@ function App() {
         <section className="legendary">
           <h2>Legendary</h2>
           <menu>
-            <TabButton onClick={() => handleClick('articuno')}>Articuno</TabButton>
-            <TabButton onClick={() => handleClick('moltres')}>Moltres</TabButton>
-            <TabButton onClick={() => handleClick('zapdos')}>Zapdos</TabButton>
+            <TabButton onClick={() => handleClick("articuno")}>
+              Articuno
+            </TabButton>
+            <TabButton onClick={() => handleClick("moltres")}>
+              Moltres
+            </TabButton>
+            <TabButton onClick={() => handleClick("zapdos")}>Zapdos</TabButton>
           </menu>
-          <div className="tab-content">
-              <img src={LEGENDARY[selectedPokemon].image} alt={LEGENDARY[selectedPokemon].name} />
+          {!selectedPokemon ? <p>Select a Legendary Pokemon</p> : (
+            <div className="tab-content">
+              <img
+                src={LEGENDARY[selectedPokemon].image}
+                alt={LEGENDARY[selectedPokemon].name}
+              />
               <h3>{LEGENDARY[selectedPokemon].name}</h3>
               <p>{LEGENDARY[selectedPokemon].description}</p>
-          </div>
+            </div>
+          )}
+         
         </section>
       </main>
 
