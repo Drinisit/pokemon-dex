@@ -11,7 +11,7 @@ body{
 
 main{
   width: 90%;
-  max-width: 50rem;
+  max-width: 70rem;
   margin: auto;
 }
 
@@ -59,4 +59,9 @@ main{
   transition: all 0.2s ease-in-out;
 }
 
+
+.whitespace{
+  height: 30rem;
+  width: 100%;
+}
 

@@ -10,6 +10,11 @@ import TabButton from './components/TabButton';
 
 
 function App() {
+
+  function handleClick(){
+    console.log('Hello')
+}
+
   return (
     <>
       <Header />
@@ -33,15 +38,20 @@ function App() {
         <section className='legendary'>
           <h2>Legendary</h2>
           <menu>
-            <TabButton >Articuno</TabButton>
-            <TabButton >Moltres</TabButton>
-            <TabButton >Zapdos</TabButton>
-            <TabButton >Mew</TabButton>
-            <TabButton >Mewtwo</TabButton>
+            <TabButton onClick={handleClick} >Articuno</TabButton>
+            <TabButton onClick={handleClick} >Moltres</TabButton>
+            <TabButton onClick={handleClick} >Zapdos</TabButton>
           </menu>
 
         </section>
       </main>
+
+
+
+
+      <div className="whitespace">
+
+      </div>
     </>
   );
 }
