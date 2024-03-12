@@ -2,6 +2,9 @@ import Bulbasaur from './assets/bulbasaur.avif'
 import Charmander from './assets/charmander.avif'
 import Pikachu from './assets/pikachu.avif'
 import Squirtle from './assets/squirtle.avif'
+import Articuno from './assets/articuno.avif'
+import Moltres from './assets/moltres.avif'
+import Zapdos from './assets/zapdos.avif'
 
 export const POKEMON_LIST = [ 
 {
@@ -24,4 +27,22 @@ export const POKEMON_LIST = [
     name: 'Squirtle',
     description: 'Squirtle is a bipedal, reptilian Pokémon. It has a blue body with purple eyes.',
 },
-]
+];
+
+export const LEGENDARY ={
+    articuno:{
+        name: 'Articuno',
+        description: 'Articuno is an Ice/Flying type Pokémon introduced in Generation 1.',
+        image: Articuno ,
+    },
+    moltres:{
+        name: 'Moltres',
+        description: 'Moltres is a Fire/Flying type Pokémon introduced in Generation 1.',
+        image: Moltres ,
+    },
+    zapdos:{
+        name: 'Zapdos',
+        description: 'Zapdos is an Electric/Flying type Pokémon introduced in Generation 1.',
+        image: Zapdos ,
+    },
+}

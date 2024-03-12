@@ -1,5 +1,6 @@
 import React,{ useState } from "react";
 
+import { LEGENDARY } from "./data";
 import { POKEMON_LIST } from "./data";
 import PokeCard from "./components/PokeCard";
 import Header from "./components/Header";
@@ -7,7 +8,7 @@ import TabButton from "./components/TabButton";
 import "./index.css";
 
 function App() {
-  const [selectedPokemon ,setSelectedPokemon] = useState('Select Pokemon'); 
+  const [selectedPokemon ,setSelectedPokemon] = useState('articuno'); 
 
   function handleClick(selectedButton) {
     setSelectedPokemon(selectedButton);
@@ -36,11 +37,15 @@ function App() {
         <section className="legendary">
           <h2>Legendary</h2>
           <menu>
-            <TabButton onClick={() => handleClick('Articuno')}>Articuno</TabButton>
-            <TabButton onClick={() => handleClick('Moltres')}>Moltres</TabButton>
-            <TabButton onClick={() => handleClick('Zapdos')}>Zapdos</TabButton>
+            <TabButton onClick={() => handleClick('articuno')}>Articuno</TabButton>
+            <TabButton onClick={() => handleClick('moltres')}>Moltres</TabButton>
+            <TabButton onClick={() => handleClick('zapdos')}>Zapdos</TabButton>
           </menu>
-          {selectedPokemon}
+          <div className="tab-content">
+              <img src={LEGENDARY[selectedPokemon].image} alt={LEGENDARY[selectedPokemon].name} />
+              <h3>{LEGENDARY[selectedPokemon].name}</h3>
+              <p>{LEGENDARY[selectedPokemon].description}</p>
+          </div>
         </section>
       </main>
 
