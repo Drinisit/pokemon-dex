@@ -15,6 +15,21 @@ function App() {
     console.log(selectedPokemon);
   }
 
+  let selectLegend = <p>Select a Legendary Pokemon</p>;
+
+  if (selectedPokemon) {
+    selectLegend = (
+      <div className="tab-content">
+        <img
+          src={LEGENDARY[selectedPokemon].image}
+          alt={LEGENDARY[selectedPokemon].name}
+        />
+        <h3>{LEGENDARY[selectedPokemon].name}</h3>
+        <p>{LEGENDARY[selectedPokemon].description}</p>
+      </div>
+    );
+  }
+
   return (
     <>
       <Header />
@@ -37,25 +52,26 @@ function App() {
         <section className="legendary">
           <h2>Legendary</h2>
           <menu>
-            <TabButton onClick={() => handleClick("articuno")}>
+            <TabButton
+              isClicked={selectedPokemon === "articuno"}
+              onClick={() => handleClick("articuno")}
+            >
               Articuno
             </TabButton>
-            <TabButton onClick={() => handleClick("moltres")}>
+            <TabButton
+              isClicked={selectedPokemon === "moltres"}
+              onClick={() => handleClick("moltres")}
+            >
               Moltres
             </TabButton>
-            <TabButton onClick={() => handleClick("zapdos")}>Zapdos</TabButton>
+            <TabButton
+              isClicked={selectedPokemon === "zapdos"}
+              onClick={() => handleClick("zapdos")}
+            >
+              Zapdos
+            </TabButton>
           </menu>
-          {!selectedPokemon ? <p>Select a Legendary Pokemon</p> : (
-            <div className="tab-content">
-              <img
-                src={LEGENDARY[selectedPokemon].image}
-                alt={LEGENDARY[selectedPokemon].name}
-              />
-              <h3>{LEGENDARY[selectedPokemon].name}</h3>
-              <p>{LEGENDARY[selectedPokemon].description}</p>
-            </div>
-          )}
-         
+          {selectLegend}
         </section>
       </main>
 

@@ -53,10 +53,15 @@ main{
   border: none;
   border-radius: 6px;
   background-color: transparent;
-  background-color: gold;
+  background-color: darkgoldenrod;
+  
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+}
+.legendary menu button.active{
+  background-color: gold;
+
 }
 
 
