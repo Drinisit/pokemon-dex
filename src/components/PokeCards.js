@@ -1,6 +1,7 @@
 import PokeCard from "./PokeCard"
 import { POKEMON_LIST } from "../data"
 
+
 export default function PokeCards(){
     return(
         <section className="cards">

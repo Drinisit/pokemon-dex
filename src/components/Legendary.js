@@ -1,5 +1,6 @@
 import React,{ useState } from "react";
 import TabButton from "./TabButton"
+import Section from "./Section";
 import { LEGENDARY } from "../data";
 
 export default function Legendary(){
@@ -27,8 +28,8 @@ export default function Legendary(){
     }
 
     return(
-        <section className="legendary">
-        <h2>Legendary</h2>
+        <Section title="Legendary" className="legendary">
+        
         <menu>
           <TabButton
             isClicked={selectedPokemon === "articuno"}
@@ -50,6 +51,6 @@ export default function Legendary(){
           </TabButton>
         </menu>
         {selectLegend}
-      </section>
+      </Section>
     )
 }
